@@ -20,7 +20,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""1ae47816-eff0-4341-8e40-34ba5e32f2bd"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -108,26 +108,37 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""75d92b59-2da8-4290-ae91-0174f81d5bfd"",
+                    ""name"": ""1D Axis"",
+                    ""id"": ""8aca13a9-206d-42eb-87a5-494f230c06ea"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""8dda4055-56ef-4432-a2b0-3a9f7a47af05"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""08b3a5ef-b338-4b18-b431-9d6a062da46a"",
+                    ""name"": ""positive"",
+                    ""id"": ""2571ddd1-bd53-4e54-b17a-f375e562a5ff"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Move"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": """",
