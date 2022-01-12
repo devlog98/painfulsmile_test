@@ -12,6 +12,10 @@ namespace devlog98.PainfulSmile {
         [SerializeField] private Rotate rotate;
         private float rotateInput;
 
+        [SerializeField] private Shoot shootForward;
+
+        [SerializeField] private Shoot shootSideways;
+
         private void OnEnable() {
             playerInput.Enable();
         }
@@ -26,6 +30,8 @@ namespace devlog98.PainfulSmile {
 
             playerController.Move.performed += ctx => moveForwardInput = ctx.ReadValue<float>();
             playerController.Rotate.performed += ctx => rotateInput = ctx.ReadValue<float>();
+            playerController.ShootForward.performed += _ => shootForward.Execute();
+            playerController.ShootSideways.performed += _ => shootSideways.Execute();
         }
 
         private void Update() {
