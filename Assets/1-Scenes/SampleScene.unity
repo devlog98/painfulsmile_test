@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 580125037}
   - component: {fileID: 580125041}
   - component: {fileID: 580125040}
+  - component: {fileID: 580125042}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -281,7 +282,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -315,6 +316,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveForward: {fileID: 580125040}
+  rotate: {fileID: 580125042}
+--- !u!114 &580125042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580125036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8b819aef43a354b9f38ae2811928ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 580125039}
+  rotateSpeed: 1
 --- !u!1 &787407715
 GameObject:
   m_ObjectHideFlags: 0
